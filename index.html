@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Survey</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Music Survey</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to help us improve</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+            </div>
+            
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <p>What is your favourite genre of music?</p>
+                <label><input name="genre" value="pop" type="radio" class="input-radio" />Pop</label>
+                <label><input name="genre" value="jazz" type="radio" class="input-radio" />Jazz</label>
+                <label><input name="genre" value="rock" type="radio" class="input-radio" />Rock</label>
+                <label><input name="genre" value="rap" type="radio" class="input-radio" />Rap</label>
+                <label><input name="genre" value="house" type="radio" class="input-radio" />House</label>
+                <label><input name="genre" value="electronic" type="radio" class="input-radio" />Electronic</label>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <p>How often do you listen to music? </p>
+                <label><input name="how-often" value="daily" type="radio" class="input-radio" />Daily</label>
+                <label><input name="how-often" value="weekly" type="radio" class="input-radio" />Weekly</label>
+                <label><input name="how-often" value="occasionally" type="radio" class="input-radio" />Occasionally</label>
+                <label><input name="how-often" value="rarely" type="radio" class="input-radio" />Rarely</label>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <p>What is your party ideal atmosphere?</p>
+                <select id="dropdown" name="atmosphere" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="bright-and-colorful">Bright and colorful</option>
+                    <option value="dark-and-moody">Dark and moody</option>
+                    <option value="intimate-and-cozy">Intimate and cozy</option>
+                    <option value="open-and-spaciuos">Open and spacious</option>
+                </select>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <p>What is your connection with the music?</span></p>
+                <label><input name="connection" value="physical" type="checkbox" class="input-checkbox" />Physical</label>
+                <label><input name="connection" value="emotional" type="checkbox" class="input-checkbox" />Emotional</label>
+                <label><input name="connection" value="spiritual" type="checkbox" class="input-checkbox" />Spiritual</label>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <p>Who is your favorite artist or band?</p>
+                <textarea id="favourite" class="input-textarea" name="favourite" placeholder="Type here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
